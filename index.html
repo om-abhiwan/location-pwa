@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA</title>
+</head>
+<body>
+    <h1>TESTING</h1>
+    <script>
+        if('serviceWorker' in navigator ){
+            navigator.serviceWorker.register('/sw.js').then((resp)=>{
+                console.warn(resp)
+            }).catch((err)=>{
+                console.error(err)
+            })
+        }else{
+            console.log("Service Worker not found")
+        }
+    </script>
+</body>
+</html>
