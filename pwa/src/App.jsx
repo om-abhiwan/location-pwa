@@ -22,7 +22,7 @@ function App() {
           language: 'en'
         },
         headers: {
-          'X-RapidAPI-Key': 'd3383b31c4msh9571344659e2104p13f011jsnb6060dd4bb87',
+          'X-RapidAPI-Key': process.env.API_KEY,
           'X-RapidAPI-Host': 'trueway-geocoding.p.rapidapi.com'
         }
       };
